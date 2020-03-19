@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <bean id="dataSource"  class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${jdbc.driver}" />
+        <property name="jdbcUrl" value="${jdbc.url}" />
+        <property name="user" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <!-- 连接池参数 -->
+        <!--初始化连接数量-->
+        <property name="initialPoolSize" value="5"></property>
+        <!--最大的连接数量-->
+        <property name="maxPoolSize" value="10"></property>
+        <!--连接超时时间-->
+        <property name="checkoutTimeout" value="3000"></property>
+    </bean>
+
+    <!--配置sqlSesiionFactory工厂 -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="configLocation" value="classpath:config/sqlmap/sqlMapConfig.xml" />
+    </bean>
+    <!-- sqlSessionTemplate配置 -->
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate" scope="prototype" >
+        <constructor-arg index="0" ref="sqlSessionFactory" />
+    </bean>
+
+    <!--配置dao接口扫描 -->
+    <!-- <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.Test.dao"></property> </bean> -->
+
+    <!-- 配置Spring框架声明式事务管理器  xml-->
+    <!--
+                1.配置事务管理器  org.springframework.jdbc.datasource.DataSourceTransactionManager
+                2.配置事务通知   tx:advice 定义唯一id标识
+                3.配置切入点表达式 aop:pointcut
+                4.aop:advisor配置AOP切面
+                5.配置事务的属性 tx:method
+     -->
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <!-- 配置事务通知 -->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="*"  propagation="REQUIRED" read-only="false"/>
+        </tx:attributes>
+    </tx:advice>
+    <!-- 配置AOP增强 -->
+    <aop:config>
+        <aop:pointcut id="ptl1" expression="execution(*  com.shop.*.*.*(..))" />
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="ptl1"/>
+    </aop:config>
+
+    <!-- 配置Spring框架声明式事务管理器 注解 -->
+    <!--
+       1.配置事务管理器  org.springframework.jdbc.datasource.DataSourceTransactionManager
+       2.开启tx扫描注解 	<tx:annotation-driven  transaction-manager="transactionManager"/>
+       3.在需要事务控制的地方使用@Transactional 注解
+     -->
+
+    <import resource="spring.xml"/>
+</beans>
