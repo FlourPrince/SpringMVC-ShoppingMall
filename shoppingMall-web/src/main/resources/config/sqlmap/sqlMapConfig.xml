@@ -3,6 +3,7 @@
 <configuration>
     <mappers>
             <mapper resource="config/nsql/ProductDao.xml"/>
+            <mapper resource="config/nsql/ShopUserDao.xml"/>
     </mappers>
 </configuration>
 

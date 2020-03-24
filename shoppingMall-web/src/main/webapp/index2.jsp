@@ -5,7 +5,7 @@
 
 <%-- <jsp:forward page="WEB-INF/pages/login1.jsp" /> --%>
 
-<a> index</a>
+<a>index2</a>
 
 </body>
 </html>

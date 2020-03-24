@@ -6,7 +6,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d32ee538-dba1-49f6-8995-4f64b46bbb92" name="Default Changelist" comment="" />
+    <list default="true" id="d32ee538-dba1-49f6-8995-4f64b46bbb92" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/shoppingMall-web/src/main/java/com/shop/Table/ShopUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingMall-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingMall-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingMall-web/src/main/java/com/shop/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingMall-web/src/main/java/com/shop/Controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingMall-web/src/main/resources/config/sqlmap/sqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingMall-web/src/main/resources/config/sqlmap/sqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingMall-web/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingMall-web/src/main/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingMall-web/src/main/resources/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingMall-web/src/main/resources/springMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingMall-web/src/main/webapp/WEB-INF/pages/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingMall-web/src/main/webapp/WEB-INF/pages/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingMall-web/src/main/webapp/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingMall-web/src/main/webapp/WEB-INF/pages/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingMall-web/src/main/webapp/WEB-INF/pages/product-pagelist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingMall-web/src/main/webapp/WEB-INF/pages/product-pagelist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingMall-web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingMall-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingMall-web/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingMall-web/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,11 +31,14 @@
       <list>
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -40,12 +56,15 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZElPcKMPsOE1FK65mvpoiQVu99" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/shoppingMall-web/src/main/webapp/WEB-INF/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shoppingMall-web/src/main/webapp" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -53,6 +72,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDE\code\spring-mvc-mybatis-shop\shoppingMall-web\src\main\webapp" />
       <recent name="D:\IDE\code\spring-mvc-mybatis-shop\shoppingMall-web\src\main\webapp\WEB-INF\pages" />
       <recent name="D:\IDE\code\spring-mvc-mybatis-shop\shoppingMall-web\src\main\resources\config\sqlmap" />
       <recent name="D:\IDE\code\spring-mvc-mybatis-shop\shoppingMall-web\src\main\resources" />
@@ -70,7 +90,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.45">
+  <component name="RunManager">
     <configuration name="Tomcat 8.5.45" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.45" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/shoppingMallweb_war/" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -144,83 +164,6 @@
         </option>
       </method>
     </configuration>
-    <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.45" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/index.jsp" />
-      <option name="UPDATING_POLICY" value="hot-swap-classes" />
-      <deployment>
-        <artifact name="shoppingMallweb:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/shoppingMallweb_war" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="index_jsp_SpringMVCShoppingMall" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="59147" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="shoppingMallweb:war" />
-        </option>
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Tomcat Server.Tomcat 8.5.45" />
-      <item itemvalue="Tomcat Server.index.jsp" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -238,12 +181,34 @@
       <workItem from="1584494564387" duration="3108000" />
       <workItem from="1584543141582" duration="1071000" />
       <workItem from="1584580661365" duration="10326000" />
-      <workItem from="1584628728095" duration="3134000" />
+      <workItem from="1584628728095" duration="5102000" />
+      <workItem from="1584667462125" duration="6869000" />
+      <workItem from="1584685351576" duration="4489000" />
+      <workItem from="1584693664569" duration="3529000" />
+      <workItem from="1584711389611" duration="8418000" />
+      <workItem from="1584886337332" duration="4383000" />
+      <workItem from="1584926252043" duration="16366000" />
+      <workItem from="1584969834670" duration="3745000" />
+      <workItem from="1584973624004" duration="599000" />
+      <workItem from="1585016142892" duration="6989000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

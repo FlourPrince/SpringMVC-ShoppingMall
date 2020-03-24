@@ -18,6 +18,6 @@
     </context:component-scan>
 
     <context:property-placeholder location="classpath:dataSource.properties" />
-
+     <import resource="classpath:applicationContext-shiro.xml"/>
 
 </beans>

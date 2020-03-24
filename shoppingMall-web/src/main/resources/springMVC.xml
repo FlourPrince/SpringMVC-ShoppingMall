@@ -28,4 +28,5 @@
     <mvc:resources location="/WEB-INF/plugins/" mapping="/plugins/**"></mvc:resources>
 
     <aop:aspectj-autoproxy proxy-target-class="true"/>
+
 </beans>
